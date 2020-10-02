@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <div class="pricing">
+    <h1>Our Pricing</h1>
+    <div class="toggle">
+      <p>Annually</p>
+      <div id="toggle-button" onclick="toggletime()">
+        <div id="circle" style="margin-right: 3.5px"></div></div>
+      <p>Monthly</p>
+    </div>
+  </div>  
+
+  <div class="prices" id="basic">
+    <h2>Basic</h2>
+    <div class="price-numbers-monthly" style="display: inline;">&dollar;19.99</div>
+    <div class="price-numbers-annually" style="display: none;">&dollar;199.99</div>
+    <div class="features">
+      <p>500 GB Storage</p>
+      <p>2 Users Allowed</p>
+      <p>Send up to 3 GB</p>
+    </div>
+    <button>Learn More</button>
+  </div>
+
+  <div class="prices" id="basic">
+    <h2>Professional</h2>
+    <div class="price-numbers-monthly" style="display: inline;">&dollar;24.99</div>
+    <div class="price-numbers-annually" style="display: none;">&dollar;249.99</div>
+    <div class="features">
+      <p>1 TB Storage</p>
+      <p>5 Users Allowed</p>
+      <p>Send up to 10 GB</p>
+    </div>
+    <button>Learn More</button>
+  </div>
+
+  <div class="prices" id="basic">
+    <h2>Master</h2>
+    <div class="price-numbers-monthly" style="display: inline;">&dollar;39.99</div>
+    <div class="price-numbers-annually" style="display: none;">&dollar;399.99</div>
+    <div class="features">
+      <p>2 TB Storage</p>
+      <p>10 Users Allowed</p>
+      <p>Send up to 20 GB</p>
+    </div>
+    <button>Learn More</button>
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script>
+    var i = document.getElementById("circle");
+    var j = document.querySelectorAll(".price-numbers-monthly")[0];
+    var j2 = document.querySelectorAll(".price-numbers-monthly")[1];
+    var j3 = document.querySelectorAll(".price-numbers-monthly")[2];
+    var k = document.querySelectorAll(".price-numbers-annually")[0];
+    var k2 = document.querySelectorAll(".price-numbers-annually")[1];
+    var k3 = document.querySelectorAll(".price-numbers-annually")[2];
+
+    function toggletime(){
+      if(i.style.marginRight === "3.5px") {
+        i.style.marginRight = "auto";
+        i.style.marginLeft = "3.5px";
+        j.style.display = "none";
+        j2.style.display = "none";
+        j3.style.display = "none";
+        k.style.display = "inline";
+        k2.style.display = "inline";
+        k3.style.display = "inline";
+      } else {
+        i.style.marginRight = "3.5px";
+        i.style.marginLeft = "auto";
+        j.style.display = "inline";
+        j2.style.display = "inline";
+        j3.style.display = "inline";
+        k.style.display = "none";
+        k2.style.display = "none";
+        k3.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

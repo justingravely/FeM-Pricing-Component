@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  /* gb = grayish blue */
+  --VLgb: hsl(240, 78%, 98%);
+  --Lgb: hsl(234, 14%, 74%);
+  --gb: hsl(233, 13%, 49%);
+  --Dgb: hsl(232, 13%, 33%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  background-image: url("images/bg-top.svg");
+  background-position-x: 195px;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+  background-color: var(--VLgb);
+}
+
+/* top */
+.pricing {
+  margin: auto;
+  height: 15em;
+  width: 20em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing h1 {
+  margin-top: 1.7em;
+  opacity: 0.55;
+}
+
+.pricing .toggle {
+  display: flex;
+  margin: auto;
+  margin-top: 3.3em;
+  width: fit-content;
+}
+
+.pricing #toggle-button {
+  width: 3.75em;
+  background: rgb(163,168,240);
+  background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+  border-radius: 25px;
+  height: 2.15em;
+  display: flex;
+}
+
+.pricing #toggle-button #circle {
+  width: 1.65em;
+  height: 1.65em;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.pricing .toggle p {
+  font-weight: bold;
+  opacity: 0.4;
+  margin: auto;
+}
+
+.pricing .toggle p:first-child {
+  margin-right: 1.5em;
+}
+
+.pricing .toggle p:last-child {
+  margin-left: 1.5em;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* prices */
+.prices {
+  background-color: white;
+  width: 22em;
+  margin: auto;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.prices h2 {
+  opacity: 0.7;
+  margin: 1em auto;
+  margin-top: 1.5em;
+}
+
+.price-numbers-monthly, .price-numbers-annually {
+  font-size: 4.5em;
+  opacity: 0.7;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.features p:nth-child(1), .features p:nth-child(3) {
+  border-top: 1px solid var(--Lgb);
+  border-bottom: 1px solid var(--Lgb)
+}
+
+.features p {
+  width: 16em;
+  margin: auto;
+  height: 3em;
+  opacity: 0.6;
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+
+button {
+  margin: 2em auto;
+  height: 2.5em;
+  width: 16em;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border: 0px solid white;
+  background: rgb(163,168,240);
+  background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+  color: white;
+}
