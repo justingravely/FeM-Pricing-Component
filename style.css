@@ -14,11 +14,10 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 15px;
-  background-image: url("images/bg-top.svg");
-  background-position-x: 195px;
-  background-position-y: -40px;
-  background-repeat: no-repeat;
   background-color: var(--VLgb);
+  background-image: url(images/bg-top.svg);
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
 }
 
 /* top */
@@ -50,6 +49,7 @@ body {
   border-radius: 25px;
   height: 2.15em;
   display: flex;
+  cursor: pointer;
 }
 
 .pricing #toggle-button #circle {
@@ -74,6 +74,7 @@ body {
   margin-left: 1.5em;
 }
 
+/* attribution */
 .attribution { 
   font-size: 11px; text-align: center; 
 }
@@ -90,6 +91,18 @@ body {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1em;
+  border-radius: 10px;
+  padding-top: 0.5em;
+}
+
+#professional {
+  background: rgb(163,168,240);
+  background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+  color: white;
+}
+
+#professional h2, #professional .price-numbers-annually, #professional .price-numbers-monthly, #professional p {
+  opacity: 0.9;
 }
 
 .prices h2 {
@@ -133,4 +146,63 @@ button {
   background: rgb(163,168,240);
   background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
   color: white;
+}
+
+#professional button {
+  background: none;
+  background-color: white;
+  color: rgba(105,111,221,1);
+}
+
+@media (min-width: 1440px) {
+  
+  .pricing {
+    margin: auto;
+    margin-top: 2em;
+    height: 15em;
+    width: 20em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    background-color: var(--VLgb);
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    height: 100vh;
+  }
+
+  .prices-wrap {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: -9em;
+  }
+
+  #professional {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .prices {
+    margin: auto;
+  }
+  
+  .pricing .toggle {
+    display: flex;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: fit-content;
+  }
+    
+}
+
+@media (max-width: 376px) {
+  body {
+    background-position-x: 180px;
+  }
 }
