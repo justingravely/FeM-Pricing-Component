@@ -179,7 +179,11 @@ button {
     display: flex;
     width: fit-content;
     margin: auto;
-    margin-top: -9em;
+    margin-top: -7em;
+  }
+
+  .pricing {
+    margin-top: 0.5em;
   }
 
   #professional {
@@ -189,13 +193,22 @@ button {
 
   .prices {
     margin: auto;
+    width: 23em;
+  }
+
+  .prices:first-child {
+    box-shadow: -1px 2px 7px rgba(72, 62, 94, 0.123);
+  }
+
+  .prices:last-child {
+    box-shadow: 1px 2px 7px rgba(72, 62, 94, 0.123);
   }
   
   .pricing .toggle {
     display: flex;
     margin: auto;
     margin-top: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     width: fit-content;
   }
     
